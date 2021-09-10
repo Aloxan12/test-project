@@ -28,6 +28,7 @@ export const Worklog = () => {
     const classes = useStyles();
 
     const items = markObj(worklog);
+    console.log(items)
 
     const refactoredWorklog = worklog.map(item => {
         return items.some(el => el === item.id) ? {...item, color: 'red'} : {...item, color: 'black' }
