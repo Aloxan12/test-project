@@ -28,7 +28,7 @@ export const Employees = () => {
 
     useEffect(() => {
         dispatch(setEmployeesT())
-    }, [])
+    }, [dispatch])
 
     if (isLoading) {
         return <Loading />
@@ -52,7 +52,7 @@ export const Employees = () => {
                                 <TableRow key={e.id}>
                                     <TableCell scope='row'>{e.id}</TableCell>
                                     <TableCell align="center">
-                                        <Link to={`/api/employees/worklog/${e.id}`}
+                                        <Link to={`/employees/worklog/${e.id}`}
                                               style={{textDecoration: 'none', color: '#3366FF'}}
                                         >{e.lastName} {e.firstName} {e.middleName}</Link>
                                     </TableCell>

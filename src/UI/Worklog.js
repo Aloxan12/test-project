@@ -37,7 +37,7 @@ export const Worklog = () => {
 
     useEffect(() => {
         dispatch(setWorklogTC())
-    }, [])
+    }, [dispatch])
 
     if (isLoading) {
         return <Loading />
@@ -46,7 +46,7 @@ export const Worklog = () => {
     return (
         <Grid item xs={12} sm={6} style={{margin: '50px auto',}}>
             <Container>
-                <NavLink to={'/api/employees'}
+                <NavLink to={'/employees'}
                          style={{display: 'inline-block', marginBottom: '30px', padding: '7px', border: '1px solid grey' ,textDecoration: 'none', color:'black'}}
                 >Вернуться к списку сотрудников</NavLink>
                 <TableContainer component={Paper}>

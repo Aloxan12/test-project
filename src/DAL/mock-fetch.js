@@ -317,8 +317,8 @@ const worklog = [
 ];
 
 const data = {
-    "/api/employees": employees,
-    "/api/employees/worklog": worklog
+    "/employees": employees,
+    "/employees/worklog": worklog
 };
 
 function delay(val) {

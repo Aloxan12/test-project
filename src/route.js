@@ -19,8 +19,9 @@ export const routes = [
     },
     {
         id: 'Employees',
-        path: 'test-project',
-        component: <Redirect to={'/employees'}  />
+        path: '*',
+        exact: false,
+        component: ()=> <Redirect to={'/employees'}/>
     },
     {
         id: 'Worklog',
@@ -30,20 +31,10 @@ export const routes = [
     }
 ];
 
-export const getRouteConfig = (id) => {
-    const route = routes.find(route => route.id === id);
-
-    if(route) {
-        const { component, ...rest } = route;
-
-        return rest;
-    }
-}
-
 export const Routes = () => {
     return (
         <Switch>
-            { routes.map(route => {
+            {routes.map(route => {
                 const { id, ...props } = route;
                 return (
                     <Route key={id} {...props} />
