@@ -1,6 +1,6 @@
 import {Worklog} from "./UI/Worklog";
 import {Employees} from "./UI/Employees";
-import {Route, Switch} from "react-router-dom";
+import {Redirect, Route, Switch} from "react-router-dom";
 import AppFC from "./UI/AppFC";
 
 
@@ -13,13 +13,18 @@ export const routes = [
     },
     {
         id: 'Employees',
-        path: '/api/employees',
+        path: '/employees',
         exact: true,
         component: Employees
     },
     {
+        id: 'Employees',
+        path: 'test-project',
+        component: <Redirect to={'/employees'}  />
+    },
+    {
         id: 'Worklog',
-        path: '/api/employees/worklog/:id',
+        path: '/employees/worklog/:id',
         exact: true,
         component: Worklog
     }
