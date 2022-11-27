@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/rozum-systems/static/js/main.d3ef6ebf.chunk.js",
-    "main.js.map": "/rozum-systems/static/js/main.d3ef6ebf.chunk.js.map",
+    "main.js": "/rozum-systems/static/js/main.b39d1732.chunk.js",
+    "main.js.map": "/rozum-systems/static/js/main.b39d1732.chunk.js.map",
     "runtime-main.js": "/rozum-systems/static/js/runtime-main.75e47154.js",
     "runtime-main.js.map": "/rozum-systems/static/js/runtime-main.75e47154.js.map",
     "static/js/2.1573c5f9.chunk.js": "/rozum-systems/static/js/2.1573c5f9.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.75e47154.js",
     "static/js/2.1573c5f9.chunk.js",
-    "static/js/main.d3ef6ebf.chunk.js"
+    "static/js/main.b39d1732.chunk.js"
   ]
 }
