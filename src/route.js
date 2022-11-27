@@ -19,7 +19,8 @@ export const routes = [
     },
     {
         id: 'Employees',
-        path: 'test-project',
+        path: '/test-project/',
+        exact: true,
         component: ()=> <Redirect to={'/employees'}/>
     },
     {
